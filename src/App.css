@@ -44,12 +44,15 @@
   position:absolute;
   filter: blur(4px);
 }
-.button1{
-  border: 2px solid green;
+
+.border-green{
+  border: 5px solid green;
+   
 }
-.button2{
-  border: 2px solid white;
-  color:white;
+.border-white{
+  border: 3px solid green;
+}
+.bg-transparent{
   background-color: transparent;
 }
 .product-txt{
@@ -71,17 +74,20 @@
   background-color: red;
   height: 30px;
 }
-.banner-detail-1{
+.banner-content{
   padding-top: 100px;
   padding-bottom: 90px;
   margin-bottom: -500px;
 }
-.banner-detail-2{
+.mt-50{
   margin-top: 50px;
 }
 .banner2-detail{
   padding-top: 60px;
   padding-bottom: 90px;
+}
+.address{
+  margin-top: -240px;
 }
 .pos-abs{
   position: absolute;
@@ -107,14 +113,16 @@
   border: 1px solid red;
 }
 .map-container{
-  
-  height:100%;
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
   }
   .map-container iframe{
   left:0;
+  top:0;
   height:100%;
   width:100%;
-  border: 0;
+  position:absolute;
   }
   .pt-180{
     padding-top: 180px;
