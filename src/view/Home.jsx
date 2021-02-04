@@ -3,12 +3,11 @@ import Footer from "../components/Footer"
 import FirstBanner from "../image/download.jpg"
 import Product from '../image/product1.jpg'
 
-import ProductsBlock from '../components/ProductsBlock'
-import SecondBanner from '../image/banner2.jpg'
-import LatestPost from '../components/LatestPost'
-import Heading from '../components/Heading'
-import Gallary from '../image/gallary.jpg'
-import axios from 'axios'
+import ProductsBlock from '../components/ProductsBlock';
+import SecondBanner from '../image/banner2.jpg';
+import LatestPost from '../components/LatestPost';
+import Gallary from '../image/gallary.jpg';
+import axios from 'axios';
 import Banner from "../components/Banner";
 import About from '../components/About';
 import { useState, useEffect } from 'react';
@@ -42,7 +41,7 @@ function Home() {
         <ProductsBlock heading="Featured Products" />
         <Banner img={SecondBanner} imgClass="pos-abs" contentClass="banner2-detail" >
         <div className="col-4 "  >
-              <Heading text="Our Story" />
+        <h2 className="text-center">Our Story</h2>
               
               <p>Once he fully understood the science behind this special botanical, Mr. Manal bought
               a hand-operated, tablet-compressing machine and began his work. At night, his shoulders
@@ -56,7 +55,7 @@ function Home() {
         
         <ProductsBlock heading="Best Sellers" />
         <div className="my-3">
-          <Heading text='Our Gallery' />
+        <h2 className="text-center">Our Gallery</h2>
           <img src={Gallary} width="100%" height="60%" />
         </div>
 
