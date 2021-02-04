@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Row from "./Row";
 
 function NewsCard(props){
     return(
@@ -10,7 +11,7 @@ function NewsCard(props){
                </div> 
         
     
-        <p className="row"><Link to={"/post/"+props.id} className="col-6 text-primary">view</Link><Link to={"/post/comments/"+props.id} className="col-6 text-primary">comments</Link></p>
+        <Row><Link to={"/post/"+props.id} className="col-6 text-primary">view</Link><Link to={"/post/comments/"+props.id} className="col-6 text-primary">comments</Link></Row>
       </div>
     )
 }
