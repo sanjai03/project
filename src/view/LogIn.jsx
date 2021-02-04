@@ -1,6 +1,8 @@
 import {useForm} from 'react-hook-form';
 import { useMutation,QueryClient } from 'react-query';
 import axios from 'axios';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { useState, useEffect } from 'react';
 const queryClient = new QueryClient()
 
@@ -27,6 +29,8 @@ function LogIn(){
         mutation.mutate(data);
     };
     return(
+        <div>
+        <Header />
         <div className="row mt-5">
             <div className="col-3"></div>
             <form className="col-6" onSubmit={handleSubmit(onSubmit)}>
@@ -48,6 +52,8 @@ function LogIn(){
                 </div>
                 </div>
             </form>
+        </div>
+        <Footer />
         </div>
         
     )
