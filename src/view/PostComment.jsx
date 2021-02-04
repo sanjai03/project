@@ -1,7 +1,8 @@
 import axios from 'axios'
 import { useState,useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import Footer from '../components/Footer';
+import Header from "../components/Header";
 function PostComment() {
     const[comments,setComments]=useState([])
     let {id} = useParams()
@@ -19,7 +20,10 @@ function PostComment() {
      
     
 return(
+      
+
 <div>
+  <Header />
   {comments&&comments.length&& comments.map((comment)=>{
     return(
       <div className="pad-black">
@@ -28,6 +32,7 @@ return(
       </div>
     )
   })}
+  <Footer />
 </div>
 )
     
