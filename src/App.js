@@ -7,6 +7,7 @@ import  PostComment from "./view/PostComment";
 import Login from "./view/LogIn";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import Loader from './view/Loader';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
             <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/loader">
+          <Loader />
         </Route>
         <Route exact path="/login">
           <Login />
