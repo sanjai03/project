@@ -1,11 +1,13 @@
+import Row from "./Row"
+
 function Banner(props){
     return(
         <div>
           <img className={props.imgClass} src={props.img} height="50%" width="95%" />
-          <div className={"row "+props.contentClass}>
+          <Row className={props.contentClass}>
             <div className="col-2"></div>
             {props.children}
-          </div>
+          </Row>
         </div>
     )
 }
